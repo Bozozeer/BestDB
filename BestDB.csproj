@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0D77A90-D3BA-4532-9AEE-B51E59D26E9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BestDB</RootNamespace>
+    <AssemblyName>BestDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFormFacultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFormFacultet.Designer.cs">
+      <DependentUpon>AddFormFacultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFormKafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFormKafedra.Designer.cs">
+      <DependentUpon>AddFormKafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddFormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFormStudents.Designer.cs">
+      <DependentUpon>AddFormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BestDB1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestDB1.Designer.cs">
+      <DependentUpon>BestDB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BestDB3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestDB3.Designer.cs">
+      <DependentUpon>BestDB3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BestDBKafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestDBKafedra.Designer.cs">
+      <DependentUpon>BestDBKafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BestDBTFacultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestDBTFacultet.Designer.cs">
+      <DependentUpon>BestDBTFacultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFormFacultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFormFacultet.Designer.cs">
+      <DependentUpon>DeleteFormFacultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFormKafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFormKafedra.Designer.cs">
+      <DependentUpon>DeleteFormKafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFormStudents.Designer.cs">
+      <DependentUpon>DeleteFormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotThePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotThePassword.Designer.cs">
+      <DependentUpon>ForgotThePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFormFacultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFormFacultet.Designer.cs">
+      <DependentUpon>SearchFormFacultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFormKafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFormKafedra.Designer.cs">
+      <DependentUpon>SearchFormKafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFormStudents.Designer.cs">
+      <DependentUpon>SearchFormStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFormFacultet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFormFacultet.Designer.cs">
+      <DependentUpon>UpdateFormFacultet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFormKafedra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFormKafedra.Designer.cs">
+      <DependentUpon>UpdateFormKafedra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFormStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateFormStudents.Designer.cs">
+      <DependentUpon>UpdateFormStudents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFormFacultet.resx">
+      <DependentUpon>AddFormFacultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFormKafedra.resx">
+      <DependentUpon>AddFormKafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddFormStudents.resx">
+      <DependentUpon>AddFormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestDB1.resx">
+      <DependentUpon>BestDB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestDB3.resx">
+      <DependentUpon>BestDB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestDBKafedra.resx">
+      <DependentUpon>BestDBKafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestDBTFacultet.resx">
+      <DependentUpon>BestDBTFacultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFormFacultet.resx">
+      <DependentUpon>DeleteFormFacultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFormKafedra.resx">
+      <DependentUpon>DeleteFormKafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFormStudents.resx">
+      <DependentUpon>DeleteFormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotThePassword.resx">
+      <DependentUpon>ForgotThePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFormFacultet.resx">
+      <DependentUpon>SearchFormFacultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFormKafedra.resx">
+      <DependentUpon>SearchFormKafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFormStudents.resx">
+      <DependentUpon>SearchFormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFormFacultet.resx">
+      <DependentUpon>UpdateFormFacultet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFormKafedra.resx">
+      <DependentUpon>UpdateFormKafedra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateFormStudents.resx">
+      <DependentUpon>UpdateFormStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
